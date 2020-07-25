@@ -10,7 +10,7 @@ export class ApixuService {
 
   getWeather(location){
     return this.http.get(
-        'http://api.weatherstack.com/current?access_key=a201fe3a1bbaa64893549315c56f0c2e&query=' + location
+        'https://cors-anywhere.herokuapp.com/http://api.weatherstack.com/current?access_key=a201fe3a1bbaa64893549315c56f0c2e&query=' + location
     );
   }
 }
